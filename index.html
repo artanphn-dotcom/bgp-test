@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGP VPN Configuration Files Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f6; /* Light gray-blue */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures footer sticks to the bottom */
+        }
+        .header {
+            background-color: #2c3e50; /* Dark blue-gray */
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 2.5em;
+        }
+        .container {
+            flex: 1; /* Allows container to grow and push footer down */
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 30px auto;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            color: #34495e; /* Muted dark blue */
+            border-bottom: 2px solid #aec6d9; /* Light blue border */
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #3498db; /* Professional blue */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #217dbb;
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+        }
+        li {
+            margin-bottom: 12px;
+            background-color: #f8fbfc; /* Very light blue background for list items */
+            padding: 10px 15px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .note {
+            background-color: #ecf0f1; /* Light gray */
+            border-left: 5px solid #f39c12; /* Amber/orange accent */
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 5px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .note code {
+            background-color: #e0e6ea;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+        }
+        .footer {
+            margin-top: auto; /* Pushes footer to the bottom */
+            background-color: #2c3e50; /* Dark blue-gray, matches header */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BGP VPN Configuration Files Documentation</h1>
+    </div>
+
+    <div class="container">
+        <p>
+            Welcome! Below you will find links to the BGP VPN configuration files and their comprehensive documentation.
+            These files contain configurations for FortiGate firewalls, specifically outlining a robust primary and secondary VPN setup connecting to an AWS environment.
+        </p>
+
+        <h2>Available Files</h2>
+        <ul>
+            <li>
+                <a href="YOUR_GITHUB_REPO_URL/Primary%20VPN.tf" target="_blank" rel="noopener noreferrer"><code>Primary VPN.tf</code></a> - Detailed configuration for the primary VPN connection.
+            </li>
+            <li>
+                <a href="YOUR_GITHUB_REPO_URL/Secondary%20VPN.tf" target="_blank" rel="noopener noreferrer"><code>Secondary VPN.tf</code></a> - Detailed configuration for the secondary (failover) VPN connection.
+            </li>
+            <li>
+                <a href="YOUR_GITHUB_REPO_URL/README.md" target="_blank" rel="noopener noreferrer"><code>README.md</code></a> - Comprehensive documentation explaining the purpose and function of each configuration line.
+            </li>
+        </ul>
+
+        <div class="note">
+            <strong>Important Note on GitHub Links:</strong> To ensure these links function correctly, please replace <code>YOUR_GITHUB_REPO_URL</code> with the base URL of your actual GitHub repository where these files are hosted.
+            <br><br>
+            For example, if your repository is located at <code>https://github.com/YourUsername/YourRepoName</code>, then the link for `Primary VPN.tf` would typically be constructed as <code>https://github.com/YourUsername/YourRepoName/blob/main/Primary%20VPN.tf</code> (assuming the file resides in the <code>main</code> branch). You may need to adjust the path segments (e.g., <code>/blob/main/</code> or <code>/raw/main/</code>) depending on whether you want to link to the file view or directly to the raw content.
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Artan V. All rights reserved.</p>
+    </footer>
+</body>
+</html>
